@@ -37,7 +37,7 @@ cacheSolve <- function(x, ...) {
               return(inv)
         }
         matrix <- x$get()
-        inv <- mean(matrix, ...)
+        inv <- solve(matrix, ...)
         x$setmean(inv)
         return(inv)
 }
